@@ -10,6 +10,10 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+#staticBackdropLabel{
+  color:var(--body_color)
+}
+
 Link{
   text-decoration: none;
 }
