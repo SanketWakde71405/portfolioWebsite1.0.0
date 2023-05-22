@@ -3,8 +3,7 @@ import ProjectItem from './ProjectItem'
 import { Link } from 'react-router-dom'
 const Projectlist = (props) => {
   // console.log(window.location.pathname);
-  const ChangeFocus=()=>{
-    
+  const ChangeFocus=()=>{   
     document.getElementsByTagName('input')[0].focus();
   }
   return (
@@ -50,7 +49,7 @@ const Projectlist = (props) => {
           </div>
         </div>
         {window.location.pathname==='/projects'?"":<div className="my-5">
-          <Link className="btn btn-lg btn-primary  text-center rounded px-4 pt-3 fs-6" to='/projects'>More Projects</Link>
+          <Link className="btn btn-lg btn-primary  text-center rounded px-4  fs-6" to='/projects'>More Projects</Link>
         </div>}
         
       </section>
