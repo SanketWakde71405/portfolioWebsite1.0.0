@@ -1,10 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+Link{
+  text-decoration: none;
+}
+a{
+  color: var(--body_color);
+  text-decoration: none;
+}
 .App {
   text-align: center;
+  color: var(--body_color);
+}
+
+.customColor {
+  background-color: var(--svgButton_background);
+}
+
+.btn #download{
+  --bs-btn-color:var(--placeholder_color)
+}
+
+.btn-primary {
+  background-color: #6366f1;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+
+
+.svgButton:hover {
+  background-color: var(--svgButton_background);
+}
+
+.resumeButton {
+  background: #eef2ff;
+
+}
+
+.contactForm{
+  background-color: var(--form_background);
+}
+
+.resumeButton:hover {
+  background-color: rgb(99 102 241);
+  color: #eef2ff;
+}
+
+i:hover,
+ion-icon:hover {
+  color: #6366f1;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+}
+
+input::placeholder{
+  color:var(--placeholder_color);
+}
+
+h1{
+  color: var(--body_color);
+}
+
+.navbar-toggler-icon{
+  background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28238,242, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler-icon[data-bs-theme=" hydrated light"]{
+  background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,0,0, 0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media(max-width: 767px) {
+  .container {
+      width: auto;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,24 +98,30 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--body_background);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--body_color);
+  text-decoration: none;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+#modeSwitch {
+  filter: invert(75%);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

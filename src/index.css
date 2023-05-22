@@ -1,3 +1,24 @@
+:root{
+  --body_background:white;
+  --body_color:white;
+  --svgButton_background:#1e3851;
+  --form_background:#102d44;
+  --placeholder_color:#87939f;
+  
+}
+
+[class="hydrated light"]{
+  --body_background:#102131;
+  --body_color:#0d2438;
+  --svgButton_background:#f7f8fc;
+  --form_background:white;
+  --placeholder_color:#ada9bb;
+}
+ 
+[data-bs-theme=dark]{
+  --bs-body-bg:#0d2438;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
