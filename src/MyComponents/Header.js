@@ -71,10 +71,10 @@ const Header = () => {
     </div>
   </div>
 </div>
-            {activeTheme==='dark'? <Link> <button type="button" onClick={() => setTheme(activeTheme)}
+            {activeTheme==='dark'?<Link> <button type="button" onClick={() => setTheme(activeTheme)}
                 aria-label="Theme Switcher" className="d-block btn rounded w-40 h-30 fs-5 customColor cursor-pointer svgButton">
                 <ion-icon name="moon-outline"></ion-icon>
-                </button></Link> :<button type="button" onClick={() => setTheme(activeTheme)}
+                </button> </Link>:<button type="button" onClick={() => setTheme(activeTheme)}
 						aria-label="Theme Switcher" className="btn rounded customColor w-40 h-30 fs-5 svgButton">
                 <i className="fa">&#9728;</i>
                 </button>

@@ -3,6 +3,7 @@ import Developer from '../img/developer-dark.svg'
 import pdf from '../img/resume.pdf'
 import { motion } from 'framer-motion';
 
+
 const MainSection = () => {
  
   return (
