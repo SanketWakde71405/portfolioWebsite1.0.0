@@ -14,7 +14,7 @@ const Projectlist = (props) => {
         <div className="mt-3">
           <div className="text-center">
             <p className=" text-center font-weight-bold container-fluid fs-3">Projects portfolio</p>
-            <p className="text-center  py-5 fs-5 mx-sm-auto">Search projects by title or filter by category</p>
+            <p className="text-center  py-3 fs-5 mx-sm-auto">Search projects by title or filter by category</p>
           </div>
           <div className='container'>
               <div className=" d-flex flex-lg-row flex-column justify-content-between align-items-center mx-lg-auto">
@@ -50,7 +50,7 @@ const Projectlist = (props) => {
           </div>
         </div>
         {window.location.pathname==='/projects'?"":<div className="my-5">
-          <Link className="btn btn-lg btn-primary  text-center rounded px-4 py-3 fs-6" to='/projects'>More Projects</Link>
+          <Link className="btn btn-lg btn-primary  text-center rounded px-4 pt-3 fs-6" to='/projects'>More Projects</Link>
         </div>}
         
       </section>

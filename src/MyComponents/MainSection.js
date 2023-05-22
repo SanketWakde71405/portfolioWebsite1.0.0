@@ -12,8 +12,8 @@ const MainSection = () => {
 			animate={{ opacity: 1 }}
 			transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}>
         <div className="row mt-5">
-          <div className="col-lg-6 mt-5 pt-5 m-lg-0 p-lg-0 ">
-               <motion.h1 className="text-center  text-uppercase text-nowrap font-weight-bolder container mt-5 pt-5 fs-2"initial={{ opacity: 0 }}
+          <div className="col-lg-6 m-lg-0 p-lg-0 ">
+               <motion.h1 className="text-center  text-uppercase text-nowrap font-weight-bolder container mt-lg-5 pt-lg-5 fs-2"initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{
 						ease: 'easeInOut',

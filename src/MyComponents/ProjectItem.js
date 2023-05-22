@@ -11,7 +11,7 @@ const ProjectIem = (props) => {
   return (
     <div key={props.item.sno} className="col-6">
         <div className="container">
-        <Link className="d-block customColor text-decoration-none rounded my-5" aria-label="Single Project" to="/projects/SingleProject" onClick={
+        <Link className="w-50 customColor text-decoration-none rounded my-5" aria-label="Single Project" to="/projects/SingleProject" onClick={
           (e) => {
             e.preventDefault();
             gotoSingle();
@@ -23,7 +23,7 @@ const ProjectIem = (props) => {
                         <div className="text-center text-decoration-none mt-3 mx-2">
                                <p className="text-decoration-none">{props.item.name}</p>
                         </div>
-                         <div className="text-center mb-3 mx-2">
+                         <div className="text-center mb-2 mx-2">
                               <span >{props.item.desc}</span>
                          </div>
                 
