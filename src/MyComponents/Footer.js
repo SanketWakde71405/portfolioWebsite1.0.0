@@ -6,6 +6,7 @@ const Footer = () => {
       <hr className="d-flex customColor m-5"></hr>
       <div className='text-center fs-2'>Follow me</div>
       <div className='text-center d-flex flex-lg-row flex-lg-nowrap flex-wrap justify-content-center align-items-center mx-lg-auto my-5'>
+        
         <Link to="https://github.com/SanketWakde71405">
           <button type="button" className="btn d-block customColor rounded mx-lg-3 svgButton">
             <ion-icon className="m-4" name="logo-github" size="large"></ion-icon>

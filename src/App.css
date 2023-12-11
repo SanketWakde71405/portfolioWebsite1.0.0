@@ -131,3 +131,119 @@ h1{
     transform: rotate(360deg);
   }
 }
+.animated-svg {
+  opacity: 0;
+  transform: translateX(-50px); /* Move the element off-screen initially */
+  animation: fadeInFromLeft 1s ease-out forwards;
+}
+
+@keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px); /* Move from left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Move to its original position */
+  }
+}
+
+/* Add delays for each SVG element */
+.animated-svg:nth-child(1) {
+  animation-delay: 0.5s; /* Adjust the delay as needed for the first SVG */
+}
+
+.animated-svg:nth-child(2) {
+  animation-delay: 1s; /* Adjust the delay as needed for the second SVG */
+}
+.animated-svg:nth-child(3) {
+  animation-delay: 1.5s; /* Adjust the delay as needed for the second SVG */
+}
+.animated-svg:nth-child(4) {
+  animation-delay: 2s; /* Adjust the delay as needed for the second SVG */
+}
+.animated-svg:nth-child(5) {
+  animation-delay: 2.5s; /* Adjust the delay as needed for the second SVG */
+}
+.animated-svg:nth-child(6) {
+  animation-delay: 3s; /* Adjust the delay as needed for the second SVG */
+}
+.animated-svg:nth-child(7) {
+  animation-delay: 3.5s; /* Adjust the delay as needed for the second SVG */
+}
+.animated-svg:nth-child(8) {
+  animation-delay: 4s; /* Adjust the delay as needed for the second SVG */
+}
+.animated-svg:nth-child(9) {
+  animation-delay: 4.5s; /* Adjust the delay as needed for the second SVG */
+}
+.animated-svg:nth-child(10) {
+  animation-delay: 5s; /* Adjust the delay as needed for the second SVG */
+}
+
+.animated_text  {
+  -webkit-text-stroke: 1px #00B5F5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(var(--primary-color), var(--primary-color));
+  -webkit-background-clip: text;
+  background-clip: none;
+  background-position: -500px 0;
+  animation: backcolor 5s linear infinite;
+}
+
+@keyframes backcolor {
+
+  100% {
+      -webkit-text-stroke: 1px #33383C;
+      background-position: 0 0;
+  }
+}
+
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+}
+.social-icons ion-icon {
+  color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all 265ms ease-out;
+}
+.social-icons Link {
+  display: inline-block;
+}
+.social-icons Link:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #00B5F5, #002A8F);
+  transition: all 265ms ease-out;
+}
+.social-icons Link:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+.social-icons Link:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: var(--primary-color);
+  background: -webkit-linear-gradient(45deg, #00B5F5, #002A8F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
+
+.custom-shadow {
+  box-shadow: 0 0.5rem 1rem var(--shadow-color); /* Adjust the color (rgba(0, 123, 255, 0.75)) as needed */
+}

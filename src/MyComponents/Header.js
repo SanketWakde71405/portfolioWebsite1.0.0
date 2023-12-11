@@ -43,6 +43,7 @@ const Header = () => {
       <div className="modal-body">
            <div className="d-flex flex-column justify-content-left mb-3">
                   <input className=" w-100 rounded customColor  border border-dark border-opacity-25 p-2 fs-6" type="text" id="name" name="name" placeholder="Name" aria-label="name" required/>
+                 
            </div>
            <div className="d-flex flex-column justify-content-left mb-3">
                   <input className=" w-100 rounded customColor  border border-dark border-opacity-25 p-2 fs-6" type="email" id="email" name="email" placeholder="Email" aria-label="email" required/>

@@ -16,7 +16,8 @@ const ProjectIem = (props) => {
             e.preventDefault();
             gotoSingle();
         }}>
-                    <div className="d-flex flex-column rounded shadow-lg cursor-pointer mb-5">
+      
+                    <div className="d-flex flex-column rounded custom-shadow cursor-pointer mt-5 mb-5">
                         <div className="text-center">
                             <img src={props.item.image} className="rounded-top border-none item img-responsive" alt="Single Project"/>
                         </div>

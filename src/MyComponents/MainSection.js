@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import Developer from '../img/developer-dark.svg'
 import pdf from '../img/resume.pdf'
 import { motion } from 'framer-motion';
-
+import Typed from 'react-typed';
 
 const MainSection = () => {
  
@@ -19,8 +19,16 @@ const MainSection = () => {
 						ease: 'easeInOut',
 						duration: 0.9,
 						delay: 0.1,
-					}} >Hi Iam Sanket</motion.h1>
-               <motion.p className="text-left font-weight-light text-nowrap container fs-4" initial={{ opacity: 0 }}
+					}} > <Typed
+          strings={[
+            'Hi I am Sanket',
+            
+          ]}
+          typeSpeed={100} // Adjust the typing speed
+          backSpeed={0} // No backspace animation
+        /></motion.h1>
+               
+               <motion.p className="text-left font-weight-light text-nowrap container fs-4 animated_text" initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{
 						ease: 'easeInOut',

@@ -4,6 +4,7 @@
   --svgButton_background:#1e3851;
   --form_background:#102d44;
   --placeholder_color:#87939f;  
+  --shadow-color:#6366f1
 }
 
 [class="hydrated light"]{
@@ -12,6 +13,7 @@
   --svgButton_background:#f7f8fc;
   --form_background:white;
   --placeholder_color:#ada9bb;
+  --shadow-color:rgba(0, 123, 255, 0.75);
   
 }
 
@@ -21,6 +23,7 @@
   --svgButton_background:#f7f8fc;
   --form_background:white;
   --placeholder_color:#ada9bb;
+  --shadow-color:#6366f1;
 }
  
 /* [data-bs-theme=dark]{
